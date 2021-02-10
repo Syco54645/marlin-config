@@ -1,0 +1,9 @@
+G28         ; home
+G29 P1      ; probe
+G29 P3 T    ; calculate mesh
+   And look at the terminal Keep doing that until all the - are gone
+G29 s1      ; saves slot
+G29 F5.0    ; or whatever fade height you want
+G29 A       ; activates
+M500
+m206 x-4
